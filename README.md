@@ -13,7 +13,9 @@ Options:
 - `-volume` - which volume to mount.
 - `-attach-timeout` - how long to wait for the EBS volume to successfully attach to the instance. (Default: 1m30s)
 - `-fs` - Which filesystem to create on the volume if one does not already exist. (Default: `ext4`)
-- `-mount` - Where to mount the volume. (Default: `/ebs/` *volume_id*)
+- `-mountpoint` - Where to mount the volume. (Default: `/ebs/` *volume_id*)
+- `-mount` - Only mount the volume, don't run a command or unmount
+- `-unmount` - Only unmount the volume
 
 It takes about 6s to complete the full attach/run/detach cycle:
 
